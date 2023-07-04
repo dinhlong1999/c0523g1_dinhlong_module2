@@ -7,11 +7,11 @@ public class ReadNumber {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Pleas import number you want read? ");
         String str = "";
-        int numberInput = scanner.nextInt();
-        int hundred = numberInput / 100;
-        int residual = numberInput % 100;
-        int dozens = residual / 10;
-        int unit = residual % 10;
+        int numberInput = scanner.nextInt(); // Nhập số
+        int hundred = numberInput / 100;    // Tìm hàng đơn trăm
+        int residual = numberInput % 100;  // Tìm phần dư
+        int dozens = residual / 10;       // Tìm hàng chục bằng cách lấy phần dư / 10
+        int unit = residual % 10;          // Tìm hàng đơn vị 
         if (numberInput < 1000 && numberInput >= 0) {
             if (hundred > 0) {
                 switch (hundred) {
