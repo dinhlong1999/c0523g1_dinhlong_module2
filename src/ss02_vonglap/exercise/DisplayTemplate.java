@@ -99,6 +99,8 @@ public class DisplayTemplate {
                         System.out.println();
                     }
                     break;
+                case 7:
+                    System.exit(0);
             }
         }
     }
