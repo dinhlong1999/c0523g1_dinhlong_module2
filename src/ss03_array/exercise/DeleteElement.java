@@ -19,7 +19,7 @@ public class DeleteElement {
                 break;
             }
         }
-        if (flag == false) {
+        if (!flag) {
             System.out.println("No pound");
         }
         System.out.println("After delete");

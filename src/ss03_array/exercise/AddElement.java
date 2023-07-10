@@ -31,7 +31,7 @@ public class AddElement {
             }
             arrNew[position] = number;
             for (int j = position + 1; j < arrNew.length; j++) {
-                arrNew[j] = arr[j-1];
+                arrNew[j] = arr[j - 1];
             }
         }
         for (int j = 0; j < arrNew.length; j++) {
