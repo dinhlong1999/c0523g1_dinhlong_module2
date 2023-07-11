@@ -3,7 +3,7 @@ package ss06_inhrentance.practice;
 public class Square extends Rectangle {
     private double side = 1.0;
     public Square(){
-      double side = 1.0;
+
     }
     public Square(double side){
         super(side,side);

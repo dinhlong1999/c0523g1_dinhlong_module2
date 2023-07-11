@@ -12,7 +12,7 @@ public class Shape {
         this.filled = filled;
     }
     public String getColor(){
-        return  this.color;
+        return this.color;
     }
     public void setColor(String color){
         this.color = color;
