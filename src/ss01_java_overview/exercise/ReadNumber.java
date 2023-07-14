@@ -11,7 +11,7 @@ public class ReadNumber {
         int hundred = numberInput / 100;    // Tìm hàng đơn trăm
         int residual = numberInput % 100;  // Tìm phần dư
         int dozens = residual / 10;       // Tìm hàng chục bằng cách lấy phần dư / 10
-        int unit = residual % 10;          // Tìm hàng đơn vị 
+        int unit = residual % 10;          // Tìm hàng đơn vị
         if (numberInput < 1000 && numberInput >= 0) {
             if (hundred > 0) {
                 switch (hundred) {

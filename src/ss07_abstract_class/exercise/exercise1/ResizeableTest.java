@@ -16,7 +16,7 @@ public class ResizeableTest {
         array1[2] = new Square(7);
         System.out.println("After change: ");
         for (Shape shape : array1) {
-            shape.resize(4);
+            shape.resize(0.1);
             System.out.println(shape.getArea());
         }
     }

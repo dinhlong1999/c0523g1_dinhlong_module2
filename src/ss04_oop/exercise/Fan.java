@@ -44,9 +44,9 @@ public class Fan {
 
     public String toString() {
         if (getStatus()) {
-            return "Speed fan: " + this.speed + "\nStatus: " + this.status + "\nRadius:" + this.radius + "\nColor = " + this.color + "\nFan is on";
+            return "Speed fan: " + getSpeed() + "\nStatus: " + getStatus() + "\nRadius:" + this.radius + "\nColor = " + this.color + "\nFan is on";
         } else {
-            return ".Radius:" + this.radius + "\nColor = " + this.color + "\nFan is off";
+            return "Radius:" + this.radius + "\nColor = " + this.color + "\nFan is off";
         }
     }
     public static void main(String[] args) {
@@ -61,6 +61,7 @@ public class Fan {
         String color = scanner.nextLine();
         Fan fan = new Fan(speed, status, radius, color);
         System.out.println(fan.toString());
+
     }
 }
 

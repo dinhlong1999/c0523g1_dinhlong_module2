@@ -10,7 +10,7 @@ public class StopWatch {
         this.endTime = endTime;
     }
     StopWatch() {
-        double startTime = System.currentTimeMillis();
+       this.startTime = System.currentTimeMillis();
     }
     public double getStartTime() {
         return startTime;
