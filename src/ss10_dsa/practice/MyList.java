@@ -2,7 +2,7 @@ package ss10_dsa.practice;
 
 import java.util.Arrays;
 
-public class MyList<I extends Number> {
+public class MyList<E> {
     private int size;
     public static final int DEFAULT_CAPACITY = 10;
     private Object elements[];
