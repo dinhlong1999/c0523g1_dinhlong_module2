@@ -17,6 +17,7 @@ public class CustomerController {
             System.out.println("2. Create: ");
             System.out.println("3. Delete: ");
             System.out.println("4. Search: ");
+            System.out.println("5. Out ");
             System.out.println("Please input a number: ");
             select = Integer.parseInt(scanner.nextLine());
             switch (select){
@@ -43,7 +44,15 @@ public class CustomerController {
                     int numberDel = Integer.parseInt(scanner.nextLine());
                     service.delCustomer(numberDel);
                     break;
+                case 4:
+                    System.out.println("Please input name you search: ");
+                    String nameSearch = scanner.nextLine();
+                    service.searchCustomer(nameSearch);
+                    break;
+                case 5:
+                    System.exit(0);
             }
+
         }while (true);
 
     }

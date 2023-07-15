@@ -52,6 +52,16 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
 
     @Override
     public void searchCustomer(String name) {
-
+        boolean flag = false;
+        for (int i = 0; i < size; i++) {
+            if (customerList[i].getName().contains(name)) {
+                System.out.println("Name of customer: " + customerList[i].getName());
+                flag = true;
+                break;
+            }
+            if (flag){
+                System.out.println("No found");
+            }
+        }
     }
 }
