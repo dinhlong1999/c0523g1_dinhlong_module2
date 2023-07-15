@@ -39,7 +39,7 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
     public void deleteCustomer(int id) {
         for (int i = 0; i < customerList.length; i++) {
             if (id == customerList[i].getId()) {
-                for (int j = i; j < size-1; j++) {
+                for (int j = i; j < size - 1; j++) {
                     customerList[j] = customerList[j + 1];
                 }
                 customerList[size - 1] = null;
@@ -59,9 +59,9 @@ public class CustomerRepositoryImpl implements ICustomerRepository {
                 flag = true;
                 break;
             }
-            if (flag){
-                System.out.println("No found");
-            }
+        }
+        if (!flag) {
+            System.out.println("No found");
         }
     }
 }
