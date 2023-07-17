@@ -1,4 +1,4 @@
-package exercise_mvc.Model;
+package exercise_mvc.model;
 
 public class Customer {
 

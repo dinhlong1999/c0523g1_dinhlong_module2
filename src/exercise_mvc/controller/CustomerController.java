@@ -1,9 +1,10 @@
 package exercise_mvc.controller;
 
-import exercise_mvc.Model.Customer;
+import exercise_mvc.model.Customer;
 import exercise_mvc.service.CustomerServiceImpl;
 import exercise_mvc.service.ICustomerService;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class CustomerController {
@@ -22,32 +23,17 @@ public class CustomerController {
             select = Integer.parseInt(scanner.nextLine());
             switch (select){
                 case 1:
-                    Customer[] customerList = service.findAll();
-                    for (Customer customer : customerList){
-                        System.out.println(customer);
-                    }
+                   service.findAll();
                     break;
                 case 2:
-                    System.out.println("Please input id: ");
-                    int id = Integer.parseInt(scanner.nextLine());
-                    System.out.println("Please input name: ");
-                    String name = scanner.nextLine();
-                    System.out.println("Please input age: ");
-                    int age = Integer.parseInt(scanner.nextLine());
-                    System.out.println("Please input type customer: ");
-                    String type = scanner.nextLine();
-                    Customer customer = new Customer(id,name,age,type);
-                    service.addCustomer(customer);
+                   service.addCustomer();
                     break;
                 case 3:
-                    System.out.println("Please input id: ");
-                    int numberDel = Integer.parseInt(scanner.nextLine());
-                    service.delCustomer(numberDel);
+
+                    service.delCustomer();
                     break;
                 case 4:
-                    System.out.println("Please input name you search: ");
-                    String nameSearch = scanner.nextLine();
-                    service.searchCustomer(nameSearch);
+                   service.searchCustomer();
                     break;
                 case 5:
                     System.exit(0);

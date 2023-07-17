@@ -1,10 +1,13 @@
 package exercise_mvc.repository;
 
-import exercise_mvc.Model.Customer;
+import exercise_mvc.model.Customer;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public interface ICustomerRepository {
-    Customer [] findAll();
+    List<Customer> findAll();
     void addCustomer(Customer customer);
-    void deleteCustomer(int id);
-    void searchCustomer(String name);
+    void delCustomer(int id);
+    List<Customer> searchCustomer(String name);
 }

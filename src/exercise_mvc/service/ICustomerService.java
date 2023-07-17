@@ -1,10 +1,12 @@
 package exercise_mvc.service;
 
-import exercise_mvc.Model.Customer;
+import exercise_mvc.model.Customer;
+
+import java.util.ArrayList;
 
 public interface ICustomerService {
-    Customer [] findAll();
-    void addCustomer(Customer customer);
-    void delCustomer(int id);
-    void searchCustomer(String name);
+    void findAll();
+    void addCustomer();
+    void delCustomer();
+    void searchCustomer();
 }
