@@ -1,6 +1,6 @@
 package ss12_dsa_java_collection_framework.practice;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private int age;
     private String address;
@@ -43,5 +43,10 @@ public class Student {
                 ", age=" + age +
                 ", address='" + address + '\'' +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return this.getName().compareTo(o.getName());
     }
 }

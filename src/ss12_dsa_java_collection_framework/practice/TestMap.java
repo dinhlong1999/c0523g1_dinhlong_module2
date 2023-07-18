@@ -7,7 +7,7 @@ import java.util.TreeMap;
 
 public class TestMap {
     public static void main(String[] args) {
-        HashMap<String, Integer> hashMap = new HashMap<>();
+        Map<String, Integer> hashMap = new HashMap<>();
         hashMap.put("Smith", 30);
         hashMap.put("Long", 20);
         hashMap.put("Van", 18);
@@ -22,6 +22,6 @@ public class TestMap {
         linkedHashMap.put("Long", 20);
         linkedHashMap.put("Lewis", 18);
         linkedHashMap.put("Ronaldo", 40);
-        System.out.println("\nThe age for " + "Lewis is " + linkedHashMap.get("Long"));
+        System.out.println("\nThe age for " + "Lewis is " + linkedHashMap.get("Lewis"));
     }
 }
