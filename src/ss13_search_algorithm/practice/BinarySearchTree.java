@@ -25,7 +25,10 @@ public class BinarySearchTree {
         System.out.println(binarySearch(list,14));
         System.out.println(binarySearch(list,16));
         System.out.println(binarySearch(list,9));
+     
+
     }
+
 
 
 }
