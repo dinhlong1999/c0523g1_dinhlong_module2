@@ -48,11 +48,12 @@ public class ProductService implements IProduceService {
         System.out.println("Input id you want delete: ");
         int id = Integer.parseInt(scanner.nextLine());
         repository.deleteProduct(id);
+        System.out.println("Success");
     }
 
     @Override
     public void getAllProduct() {
-        ArrayList<Product> products = repository.getAllProduct();
+        List<Product> products = repository.getAllProduct();
         for (Product product : products) {
             System.out.println(product);
         }
@@ -70,7 +71,7 @@ public class ProductService implements IProduceService {
 
     @Override
     public void sortPrinceIncrease() {
-        ArrayList<Product> products = repository.sortPriceIncrease();
+        List<Product> products = repository.sortPriceIncrease();
         for (Product product: products) {
             System.out.println("Increase: " + product);
         }
@@ -78,7 +79,7 @@ public class ProductService implements IProduceService {
 
     @Override
     public void sortPrinceDecrease() {
-        ArrayList<Product> products = repository.sortPrinceDecrease();
+        List<Product> products = repository.sortPrinceDecrease();
         for (Product product: products) {
             System.out.println("Decrease: " + product);
         }
