@@ -123,6 +123,7 @@ public class MyList<E> {
     public int size() {
         return size;
     }
+
 }
 
 
