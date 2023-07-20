@@ -41,7 +41,7 @@ public class RecursiveAlgorithm {
         for (int i = 0; i < arrayList.size(); i++) {
             System.out.print(arrayList.get(i) + "\t");
         }
-        System.out.println();gi
+        System.out.println();
         System.out.println("Enter a number check");
         int value = Integer.parseInt(scanner.nextLine());
         int result = binarySearch(arrayList, 0, arrayList.size() - 1, value);
