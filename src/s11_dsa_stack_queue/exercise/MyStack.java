@@ -14,11 +14,10 @@ public class MyStack {
         mWord.push(50);
         System.out.println("Array before swap: " + mWord);
 
-        while (!mWord.empty()){
+        while (!mWord.empty()) {
             wStack.push(mWord.pop());
         }
         System.out.println("Array after swap: " + wStack);
-
 
 
 

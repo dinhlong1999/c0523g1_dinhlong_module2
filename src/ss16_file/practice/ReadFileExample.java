@@ -24,6 +24,8 @@ public class ReadFileExample {
             br.close();
         }catch (Exception e){
             System.out.println("Da xay ra loi ");
+        } finally {
+            System.out.println("ok");
         }
     }
 

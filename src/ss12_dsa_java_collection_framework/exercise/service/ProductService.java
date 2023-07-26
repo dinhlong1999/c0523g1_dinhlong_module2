@@ -12,7 +12,7 @@ import java.util.Scanner;
 
 public class ProductService implements IProduceService {
 
-    IProductRepository repository = new ProductRepository();
+     private IProductRepository repository = new ProductRepository();
     Scanner scanner = new Scanner(System.in);
 
     @Override
@@ -73,7 +73,7 @@ public class ProductService implements IProduceService {
     public void sortPrinceIncrease() {
         List<Product> products = repository.sortPriceIncrease();
         for (Product product: products) {
-            System.out.println("Increase: " + product);
+            System.out.println(product);
         }
     }
 
@@ -81,7 +81,7 @@ public class ProductService implements IProduceService {
     public void sortPrinceDecrease() {
         List<Product> products = repository.sortPrinceDecrease();
         for (Product product: products) {
-            System.out.println("Decrease: " + product);
+            System.out.println(product);
         }
     }
 

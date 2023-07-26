@@ -10,7 +10,7 @@ public class ProductController {
     public static void showMenu(){
         IProduceService service = new ProductService();
         Scanner scanner = new Scanner(System.in);
-        int choice = 0;
+        int choice ;
             do {
                 System.out.println("Please choose number: ");
                 System.out.println("1.List product: ");
