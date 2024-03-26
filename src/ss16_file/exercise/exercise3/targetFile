@@ -1,0 +1,4 @@
+Customer{id=1, name='Long', age=31, address='NewYork'}
+Customer{id=3, name='Hanh', age=35, address='NewYork'}
+Customer{id=4, name='Lan', age=32, address='NewYork'}
+Customer{id=6, name='Thanh', age=38, address='NewYork'}

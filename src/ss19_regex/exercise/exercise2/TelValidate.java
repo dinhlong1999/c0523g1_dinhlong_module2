@@ -4,7 +4,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class TelValidate {
-    private static final String REGEX = "^[(][0-9]{2}[)]-[(][0][0-9]{9}[)]$";
+    private static final String REGEX = "^\\([84]{2}\\)-\\(0\\d{9}\\)$";
     private static final String[] VALID_TEL = {"(84)-(0932533481)", "(84)-(0905346958)"};
     private static final String[] INVALID_TEL = {"(a8)-(22222222)", "(84)-(22b22222)", "(84)-(9978489648)"};
 

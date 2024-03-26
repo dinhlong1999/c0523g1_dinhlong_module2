@@ -46,7 +46,8 @@ public class CopyFile {
     public static void main(String[] args) {
         String url = "D:\\c0523g1_dinhlong_module2\\src\\ss16_file\\exercise\\exercise1\\result.csv";
         String result = "D:\\c0523g1_dinhlong_module2\\src\\ss16_file\\exercise\\exercise1\\targetfile";
-        writeFile(readFile(url), result);
+        writeFile(readFile(result), url);
         System.out.println("Success");
     }
+
 }
